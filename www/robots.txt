@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://harshrohila.github.io/javascript-blog/www/sitemap.xml
