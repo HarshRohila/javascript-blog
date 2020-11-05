@@ -3,6 +3,7 @@ import Prism from 'prismjs';
 
 @Component({
   tag: 'home-page',
+  styleUrl: 'home-page.css',
   scoped: true,
 })
 export class HomePage {
@@ -13,7 +14,7 @@ export class HomePage {
 
   render() {
     return (
-      <Host>
+      <Host style={{maxWidth:'800px', display: 'block'}}>
         <h1>Javascript for C++ Programmers</h1>
         <p>This is specially created for audiences familiar with C++ to quickly get started with JavaScript and start building applications.</p>
 
