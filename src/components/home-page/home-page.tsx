@@ -18,22 +18,19 @@ export class HomePage {
         <h1>Javascript for C++ Programmers</h1>
         <p>This is specially created for audiences familiar with C++ to quickly get started with JavaScript and start building applications.</p>
 
-        <h4>80-20 rule</h4>
-        <p>This tutorial will not cover all JavaScript concepts. I will cover only 20% things which will get 80% of the work done.</p>
+        <note-block text={'This tutorial will not cover all JavaScript concepts. I will cover only 20% things which will get 80% of the work done (80-20 rule)'}></note-block>
 
         <h4>What can we build with JavaScript?</h4>
         <p>Websites (both frontend and backend), mobile apps, PWAs</p>
 
         <h4>Hello World Program</h4>
         <js-code code={`console.log('Hello World'); // prints 'Hello World'`} />
-        {/* <pre><code class="language-javascript">
-          {`console.log('Hello World'); // prints 'Hello World'`}</code></pre> */}
 
-        <p>To run the programs given in this material, open a browser(preferably chrome), press F12, paste the program in under console tab and press Enter</p>
+        <note-block text={'To run the programs given in this material, open a browser(preferably chrome), press F12, paste the program under console tab and press Enter'}></note-block>
         <p>You should see <code>Hello World</code> output for the above program, you will also see <code>undefined</code>, we will see later what is that.</p>
         <p>In the above program Hello World is a string</p>
 
-        <h4>String in JS</h4>
+        <h4>Strings in JS</h4>
         <h5>(here on I will use JS for JavaScript)</h5>
         <p>Single quotes or double quotes can be used for strings, like C++ escaping characters like <code>\n \t</code> can be used. Also it supports string concatenation using <code>+</code> sign</p>
         <js-code code={`console.log('Hello' + 'World'); //prints HelloWorld`}></js-code>
@@ -42,7 +39,7 @@ export class HomePage {
         <h4>undefined</h4>
         <p>It's a special value in JS, in the program above it's the return value of <code>console.log</code> function, it's like <code>void</code> if we compare it to C++, which means this function is not returning anything.</p>
 
-        <p><b>Semicolons</b> at the end of the line are not necessary, but in some rare cases without semicolons can give unexpected results, so most people use semicolons.</p>
+        <note-block text={'Semicolons at the end of the line are not necessary, but in some rare cases without semicolons can give unexpected results, so most people use semicolons.'}></note-block>
 
         <h4>Variable Declaration</h4>
         <p>Keywords used for variable declaration are <code>let</code> and <code>const</code> and <code>var</code></p>
@@ -52,13 +49,13 @@ console.log(number); // prints 2
 `}></js-code>
       <p>Similar to C++, <code>const</code> variables cannot be reassigned.</p>
       <js-code code={`num = 3; // will throw error`}></js-code>
-      <p>Note that, unlike C++, we do not need to mention data types while declaring variables. JS figures out data type from the assigned value.</p>
+      <note-block text={'Unlike C++, we do not need to mention data types while declaring variables. JS figures out data type from the assigned value.'}></note-block>
       <p>To print types we can use <code>typeof</code> keyword</p>
       <js-code code={`typeof num; // prints 'number'
 typeof 'hello'; // prints 'string'
 `}></js-code>
 <p>We will cover all the data types as we go along.</p>
-<p>Note that, unlike C++, there is no <code>int, float, double</code> data types, JS's <code>number</code> data type covers all these 3</p>
+<p>Unlike C++, there is no <code>int, float, double</code> data types, JS's <code>number</code> data type covers all these 3</p>
 
 <js-code code={`typeof 3.14; // prints 'number'`}></js-code>
 
@@ -85,7 +82,7 @@ console.log('Value of Pi is ' + Pi);	// Value of PI is 3.14`}></js-code>
         <p>Note that, we are using backtick(`) not a single quote to use the variable inside the string. </p>
         <p>Variables can be used inside the string using ${'{variableName}'}</p>
         <p>String interpolation has more features but those are rarely needed.</p>
-        <p>Also, this is the first time I used camelCase in this material, so make note that camelCase is the convention for identifier names in JS.</p>
+        <note-block text={'This is the first time I used camelCase in this material, its time to mention that camelCase is the convention for identifier names in JS'}></note-block>
 
         <h4>Operators</h4>
         <p>All arithmetic operators of C++ are available and work in the same way in JS. These are <code>+,-,*,/</code></p>

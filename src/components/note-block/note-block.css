@@ -1,0 +1,9 @@
+:host {
+  display: block;
+}
+p {
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}

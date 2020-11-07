@@ -19,6 +19,9 @@ export namespace Components {
     interface JsCode {
         "code": string;
     }
+    interface NoteBlock {
+        "text": string;
+    }
 }
 declare global {
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
@@ -51,12 +54,19 @@ declare global {
         prototype: HTMLJsCodeElement;
         new (): HTMLJsCodeElement;
     };
+    interface HTMLNoteBlockElement extends Components.NoteBlock, HTMLStencilElement {
+    }
+    var HTMLNoteBlockElement: {
+        prototype: HTMLNoteBlockElement;
+        new (): HTMLNoteBlockElement;
+    };
     interface HTMLElementTagNameMap {
         "app-home": HTMLAppHomeElement;
         "app-profile": HTMLAppProfileElement;
         "app-root": HTMLAppRootElement;
         "home-page": HTMLHomePageElement;
         "js-code": HTMLJsCodeElement;
+        "note-block": HTMLNoteBlockElement;
     }
 }
 declare namespace LocalJSX {
@@ -72,12 +82,16 @@ declare namespace LocalJSX {
     interface JsCode {
         "code"?: string;
     }
+    interface NoteBlock {
+        "text"?: string;
+    }
     interface IntrinsicElements {
         "app-home": AppHome;
         "app-profile": AppProfile;
         "app-root": AppRoot;
         "home-page": HomePage;
         "js-code": JsCode;
+        "note-block": NoteBlock;
     }
 }
 export { LocalJSX as JSX };
@@ -89,6 +103,7 @@ declare module "@stencil/core" {
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "home-page": LocalJSX.HomePage & JSXBase.HTMLAttributes<HTMLHomePageElement>;
             "js-code": LocalJSX.JsCode & JSXBase.HTMLAttributes<HTMLJsCodeElement>;
+            "note-block": LocalJSX.NoteBlock & JSXBase.HTMLAttributes<HTMLNoteBlockElement>;
         }
     }
 }
